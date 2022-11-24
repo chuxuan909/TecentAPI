@@ -17,7 +17,11 @@
 
 ## 3、使用简介
 
-下载后，修改APIConfig 目录下的config.py文件和params文件后，python执行文件 wanyong.py
+```shell
+git clone https://github.com/chuxuan909/TecentAPI.git
+```
+
+下载后，修改项目目录，子目录 APIConfig 中的config.py文件和params文件后，python执行文件 wanyong.py
 
 ## 4、环境要求
 
