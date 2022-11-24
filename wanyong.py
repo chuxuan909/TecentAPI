@@ -70,8 +70,10 @@ def call_api(authorization,timestamp):
     try:
         add_url= request.Request(url=config.endpoint,data=bytes(json.dumps(params.avgs),'utf-8'),headers=headers,method='POST')
         res=request.urlopen(add_url)
-        resaut=res.read().decode("utf-8")
-        print(resaut)
+        resaut=res.read().decode("utf-8") #json格式的字符串
+        #print(resaut)
+        resaut_fromat=json.dumps(json.loads(resaut),sort_keys=True, indent=4, separators=(',', ':'))
+        print(resaut_fromat)
         
     except Exception as err:
         print(err)
